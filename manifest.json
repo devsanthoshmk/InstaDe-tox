@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "InstaDe-tox",
+    "version": "1.0",
+    "permissions": ["activeTab","https://www.instagram.com/"],
+  
+    "description": "Instagram De-toxification.",
+  
+    "icons": {
+      "48": "icons/instablackenwhite.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://www.instagram.com/"],
+        "js": ["init.js"]
+      }
+    ]
+  }
+  
